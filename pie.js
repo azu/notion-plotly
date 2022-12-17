@@ -32,5 +32,8 @@ const render = () => {
         labels
     }]);
 }
+if (!pValues || !pLabels) {
+    location.href = './index.html';
+}
 render();
 

@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <title>Notion Plotly</title>
     <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
-    <style>
-        html, body, #main {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
-<div id="main" style="width:100vw;height:100vh;"></div>
-<script type="module" src="./index.js">
-</script>
+<div>
+    <h2>Bar Charts</h2>
+    <ul>
+        <li>
+            <a href="./bar.html?x=2000年1月1日,2001年2月1日,2003年3月1日&y=100,200,300,400"><code>
+                /bar.html?x=100,200,300&y=2000年1月1日,2001年2月1日,2003年3月1日
+            </code></a>
+        </li>
+        <li>
+            <a href="./bar.html?x=2000年1月1日,2001年2月1日,2003年3月1日,2003年4月1日&y=100,200,300,400&y=&group=A,A,B,B"><code>
+                /bar.html?x=100,200,300,400&y=2000年1月1日,2001年2月1日,2003年3月1日,2003年4月1日&group=A,A,B,B
+            </code></a>
+        </li>
+        <li>
+            <a href="./bar.html?x=2003年3月1日,2003年4月1日,2000年1月1日,2001年2月1日&y=300,400,100,200&y=&group=B,B,A,A&sortBy=x"><code>
+                /bar.html?x=100,200,300,400&y=2000年1月1日,2001年2月1日,2003年3月1日,2003年4月1日&group=A,A,B,B&sortBy=x
+            </code></a>
+        </li>
+    </ul>
+</div>
+<div>
+    <h2>Pie Charts</h2>
+    <ul>
+        <li>
+            <a href="./pie.html?values=19,26,55&labels=Residential,Non-Residential,Utility"><code>
+                /pie.html?values=19,26,55&labels=Residential,Non-Residential,Utility
+            </code></a>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>

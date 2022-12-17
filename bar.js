@@ -3,7 +3,7 @@ const url = new URL(location.href);
 const pX = url.searchParams.get('x');
 const pY = url.searchParams.get('y');
 const sortBy = url.searchParams.get('sortBy');
-const pType = url.searchParams.get('type');
+const pType = url.searchParams.get('type') ?? "bar";
 const pGroup = url.searchParams.get('group');
 const commaToArray = (str) => {
     return str.split(',');
@@ -55,7 +55,7 @@ const renderGroup = () => {
 }
 
 if (!pX || !pY) {
-    location.href = './examples.html';
+    location.href = './index.html';
 }
 if (pGroup) {
     renderGroup();
