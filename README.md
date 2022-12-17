@@ -27,6 +27,8 @@ Pass following parameters to graph page.
 
 ## Integration with Notion
 
+Notion Template: <https://efcl.notion.site/Notion-Plotly-f38a5b4fafb342b6b9b3dea6e7de102c>
+
 1. Create new Database
 2. Add the database's relation to another database which you want to collect data from
 3. Rollup properties
