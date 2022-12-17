@@ -40,6 +40,23 @@ Example
 
 :memo: Notion does not allow to use non-Ascii URL for embed.
 
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+Welcome to new charts
+
+- [Plotly javascript graphing library in JavaScript](https://plotly.com/javascript/)
+
+## License
+
+MIT
+
 ## Supports
 
 Powered by netlify and plotly.
+
