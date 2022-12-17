@@ -18,7 +18,9 @@ const createSortBy = ({ x, y, group }) => {
     });
     if (sortBy === "x" || sortBy === "y" || sortBy === "group") {
         return sortedView.sort((a, b) => {
-            return a[sortBy].localeCompare(b[sortBy]);
+            return a[sortBy].localeCompare(b[sortBy], "ja", {
+                numeric: true
+            });
         });
     }
     return sortedView;
