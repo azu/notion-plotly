@@ -12,3 +12,7 @@ Pass following parameters to URL.
 ## Examples
 
     <type=bar&x=2000年1月1日,2001年2月1日,2003年3月1日&y=100,200,300,400>
+
+## Supports
+
+Powered by netlify and plotly.
