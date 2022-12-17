@@ -35,7 +35,7 @@ Pass following parameters to graph page.
 Example
    
 ```js
-"https://notion-plotly.netlify.app/index.html?type=bar&sortBy=x&y=" + prop("Value") + "&x=" + replaceAll(replaceAll(replaceAll(prop("Date"), "年", "/"), "月", "/"), "日", "") + "&group=" + prop("Company")
+"https://notion-plotly.netlify.app/bar.html?sortBy=x&y=" + prop("Value") + "&x=" + replaceAll(replaceAll(replaceAll(prop("Date"), "年", "/"), "月", "/"), "日", "") + "&group=" + prop("Company")
 ```
 
 :memo: Notion does not allow to use non-Ascii URL for embed.
