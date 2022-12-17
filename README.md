@@ -4,14 +4,16 @@
 
 Pass following parameters to URL.
 
-- `x`: x values
-- `y`: y values
-- `type`: type of plot
-- `group`: group values
+- `type=?`: type of plot
+  - `bar`: bar chart
+- `x=1,2,3,4`: x values
+- `y=1,2,3,4`: y values
+- `group=A,A,B,B`: group values
+- `sortBy=?`: sort values by `x` or `y` or `group`
 
 ## Examples
 
-    <type=bar&x=2000年1月1日,2001年2月1日,2003年3月1日&y=100,200,300,400>
+- <https://notion-plotly.netlify.app/examples.html>
 
 ## Supports
 
