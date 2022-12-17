@@ -59,6 +59,14 @@ if (!pX || !pY) {
 }
 if (pGroup) {
     renderGroup();
+    const resizeObserver = new ResizeObserver(entries => {
+        renderGroup();
+    });
+    resizeObserver.observe(main);
 } else {
     render();
+    const resizeObserver = new ResizeObserver(entries => {
+        render();
+    });
+    resizeObserver.observe(main);
 }

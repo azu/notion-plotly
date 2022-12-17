@@ -36,4 +36,8 @@ if (!pValues || !pLabels) {
     location.href = './index.html';
 }
 render();
+const resizeObserver = new ResizeObserver(entries => {
+    render();
+});
+resizeObserver.observe(main);
 
