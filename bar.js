@@ -54,19 +54,20 @@ const renderGroup = () => {
     Plotly.newPlot(main, traces, { barmode: 'group' });
 }
 
+const renderMain = () => {
+    if (pGroup) {
+        renderGroup();
+    } else {
+        render();
+    }
+}
 if (!pX || !pY) {
     location.href = './index.html';
 }
-if (pGroup) {
-    renderGroup();
-    const resizeObserver = new ResizeObserver(entries => {
-        renderGroup();
-    });
-    resizeObserver.observe(main);
-} else {
-    render();
-    const resizeObserver = new ResizeObserver(entries => {
-        render();
-    });
-    resizeObserver.observe(main);
-}
+
+renderMain();
+const resizeObserver = new ResizeObserver(() => {
+    renderMain();
+});
+resizeObserver.observe(main);
+
