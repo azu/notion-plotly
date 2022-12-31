@@ -27,7 +27,7 @@ Please Specify x and y values.
     return [];
 })
 // sort by x or y
-const sortBy = url.searchParams.get('sortBy') ?? "x";
+const sortBy = url.searchParams.get('sortBy');
 const commaToArray = (str) => {
     return str.split(',');
 };
